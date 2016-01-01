@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Tune found at https://www.reddit.com/r/linux/comments/18h8v5/does_anyone_have_or_know_a_source_for_beep_scripts/
+# dbeeptized by Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
+# See file LICENSE for license information.
+
+. $(dirname $(readlink -f $0))/dbeep.inc.sh
+
+for n in $(seq 1 16); do
+    for f in 1000 2000; do
+        note $f 20
+    done
+done
+
+dbeep
