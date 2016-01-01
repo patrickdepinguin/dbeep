@@ -1,0 +1,174 @@
+#!/bin/sh
+
+# Copyright (c) 2016 Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
+# Manually coded based on sheet music at
+# http://pop-sheet-music.com/Files/4a34e9740c764a1dc131af7ed130720f.pdf
+# See file LICENSE for license information.
+
+# TODO implement better way of setting note lengths and delays
+
+L1=1000
+. $(dirname $(readlink -f $0))/dbeep.inc.sh
+
+note8  ${D[3]}
+note8  ${D[3]}
+note8  ${D[3]}
+
+note2  ${G[3]}
+note2  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${C[4]}
+note2  ${A[3]}
+note4  ${D[3]}
+note8  ${D[3]}
+
+note2  ${G[3]}
+note2  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${C[4]}
+note2  ${A[3]}
+note4  ${D[3]}
+note8  ${D[3]}
+
+note4d ${E[3]}
+note8  ${E[3]}
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note8  ${G[3]}
+
+note8  ${G[3]}
+note8  ${A[3]}
+note8  ${B[3]}
+note4  ${A[3]}
+note8  ${E[3]}
+note4  ${Fs[3]}
+note4  ${D[3]}
+note8  ${D[3]}
+
+note4d ${E[3]}
+note8  ${E[3]}
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note8  ${G[3]}
+
+note8d ${D[4]}
+note16 ${A[3]}
+note2  ${A[3]}
+note4  ${D[3]}
+note8  ${D[3]}
+
+note4d ${E[3]}
+note8  ${E[3]}
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note8  ${G[3]}
+
+note8  ${G[3]}
+note8  ${A[3]}
+note8  ${B[3]}
+note4  ${A[3]}
+note8  ${E[3]}
+note4  ${Fs[3]}
+note4  ${D[4]}
+note8  ${D[4]}
+
+note4  ${G[4]}
+note8  ${F[4]}
+note4  ${E[4]}
+note8  ${D[4]}
+note4  ${C[4]}
+note8  ${Bb[3]}
+note4  ${A[3]}
+note8  ${G[3]}
+
+note2  ${D[4]}
+note4  ${A[3]}
+note   ${A[3]} $L8 $L4 # extra pause
+note8  ${D[3]}
+note8  ${D[3]}
+note8  ${D[3]}
+
+note2  ${G[3]}
+note2  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${C[4]}
+note2  ${A[3]}
+note4  ${D[3]}
+note8  ${D[3]}
+
+note2  ${G[3]}
+note2  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${A[3]}
+note2  ${G[4]}
+note4  ${D[4]}
+
+note8  ${C[4]}
+note8  ${B[3]}
+note8  ${C[4]}
+note2  ${A[3]}
+note4  ${D[3]}
+
+note1  ${G[4]}
+
+note2d ${G[4]}
+note8  ${G[4]}
+note8  ${G[4]}
+note8  ${G[4]}
+
+note8  ${G[4]}
+
+dbeep

@@ -59,7 +59,9 @@ note()
 
 note1()   { note $1 $L1   $L2    ; } # whole note
 note2()   { note $1 $L2   $L4    ; } # half note
+note2d()  { note $1 $L2d  $L4d   ; } # half note dotted
 note4()   { note $1 $L4   $L8    ; } # quarter note
+note4d()  { note $1 $L4d  $L8d   ; } # quarter note dotted
 note8()   { note $1 $L8   $L16   ; } # 8th note
 note8d()  { note $1 $L8d  $L16d  ; } # 8th note dotted
 note16()  { note $1 $L16  $L32   ; } # 16th note
