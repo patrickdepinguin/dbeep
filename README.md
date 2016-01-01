@@ -44,3 +44,15 @@ A skeleton dbeep file is:
 
 dbeep
 ```
+
+## TODO
+
+* Convert lengths to arrays too
+* Add uniform script argument to speed up/down, and to switch octave up/down
+
+## Contributing
+
+Contributions are welcome!
+
+When adding new tunes, please indicate the source and copyright information.
+See existing scripts for examples.
