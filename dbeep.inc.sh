@@ -21,22 +21,26 @@ Bb=( ${As[*]} )
 B=(  30.868 61.735 123.47 246.94 493.88 987.77 1975.5 3951.1 7902.1 15804.3 31608.5 )
 
 # Note lengths (milliseconds)
-# To determine the play speed, set L1 from the calling script; all other note
-# lengths are derived from that. L1 should be dividable by 32.
-: ${L1:=1344}
-L2=$(( $L1 / 2 ))
-L4=$(( $L1 / 4 ))
-L8=$(( $L1 / 8 ))
-L16=$(($L1 / 16))
-L32=$(($L1 / 32))
+# To determine the play speed, set variable `whole_note_length` from the
+# calling script; all other note lengths are derived from that.
+# whole_note_length should be dividable by 32.
+
+declare -A L # associative array
+
+L[1]=${whole_note_length:-1344}
+L[2]=$((${L[1]} / 2 ))
+L[4]=$((${L[1]} / 4 ))
+L[8]=$((${L[1]} / 8 ))
+L[16]=$((${L[1]} / 16))
+L[32]=$((${L[1]} / 32))
 
 # dotted lengths
-L1d=$(( $L1  + $L1  / 2))
-L2d=$(( $L2  + $L2  / 2))
-L4d=$(( $L4  + $L4  / 2))
-L8d=$(( $L8  + $L8  / 2))
-L16d=$(($L16 + $L16 / 2))
-L32d=$(($L32 + $L32 / 2))
+L[1d]=$((${L[1]}  + ${L[1]}  / 2))
+L[2d]=$((${L[2]}  + ${L[2]}  / 2))
+L[4d]=$((${L[4]}  + ${L[4]}  / 2))
+L[8d]=$((${L[8]}  + ${L[8]}  / 2))
+L[16d]=$((${L[16]} + ${L[16]} / 2))
+L[32d]=$((${L[32]} + ${L[32]} / 2))
 
 args=""
 first=1
@@ -57,14 +61,19 @@ note()
     fi
 }
 
-note1()   { note $1 $L1   $L2    ; } # whole note
-note2()   { note $1 $L2   $L4    ; } # half note
-note2d()  { note $1 $L2d  $L4d   ; } # half note dotted
-note4()   { note $1 $L4   $L8    ; } # quarter note
-note4d()  { note $1 $L4d  $L8d   ; } # quarter note dotted
-note8()   { note $1 $L8   $L16   ; } # 8th note
-note8d()  { note $1 $L8d  $L16d  ; } # 8th note dotted
-note16()  { note $1 $L16  $L32   ; } # 16th note
+# standard musical note
+# arguments:
+#   $1: length (1=whole, 2=half, 4=quarter, ...)
+#   $2: frequency
+nnote() {
+    # use half a note length as delay
+    note $2 ${L[${1}]} ${L[$(($1 * 2))]}
+}
+# dotted note
+dnote() {
+    # use half a note length as delay
+    note $2 ${L[${1}d]} ${L[$(($1 * 2))d]}
+}
 
 # beep with the combined arguments
 dbeep() {

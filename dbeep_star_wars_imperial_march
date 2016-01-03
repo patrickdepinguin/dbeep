@@ -7,82 +7,82 @@
 
 . $(dirname $(readlink -f $0))/dbeep.inc.sh
 
-note4  ${G[3]}
-note4  ${G[3]}
-note4  ${G[3]}
-note8d ${Eb[3]}
-note16 ${Bb[3]}
+nnote 4  ${G[3]}
+nnote 4  ${G[3]}
+nnote 4  ${G[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${Bb[3]}
 
-note4  ${G[3]}
-note8d ${Eb[3]}
-note16 ${Bb[3]}
-note2  ${G[3]}
+nnote 4  ${G[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${Bb[3]}
+nnote 2  ${G[3]}
 
-note4  ${D[4]}
-note4  ${D[4]}
-note4  ${D[4]}
-note8d ${Eb[4]}
-note16 ${Bb[3]}
+nnote 4  ${D[4]}
+nnote 4  ${D[4]}
+nnote 4  ${D[4]}
+dnote 8 ${Eb[4]}
+nnote 16 ${Bb[3]}
 
-note4  ${Gb[3]}
-note8d ${Eb[3]}
-note16 ${Bb[3]}
-note2  ${G[3]}
+nnote 4  ${Gb[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${Bb[3]}
+nnote 2  ${G[3]}
 
-note4  ${G[4]}
-note8d ${G[3]}
-note16 ${G[3]}
-note4  ${G[4]}
-note8d ${Fs[4]}
-note16 ${F[4]}
+nnote 4  ${G[4]}
+dnote 8 ${G[3]}
+nnote 16 ${G[3]}
+nnote 4  ${G[4]}
+dnote 8 ${Fs[4]}
+nnote 16 ${F[4]}
 
-note16 ${E[4]}
-note16 ${Ds[4]}
-note   ${E[4]} $L8 $L4 # extra pause
-note8  ${Gs[3]}
-note4  ${Cs[4]}
-note8d ${C[4]}
-note16 ${B[3]}
+nnote 16 ${E[4]}
+nnote 16 ${Ds[4]}
+ note   ${E[4]} ${L[8]} ${L[4]} # extra pause
+nnote 8  ${Gs[3]}
+nnote 4  ${Cs[4]}
+dnote 8 ${C[4]}
+nnote 16 ${B[3]}
 
-note16 ${Bb[3]}
-note16 ${A[3]}
-note   ${Bb[3]} $L8 $L4 # extra pause
-note8  ${Eb[3]}
-note4  ${Gb[3]}
-note8d ${Eb[3]}
-note16 ${G[3]}
+nnote 16 ${Bb[3]}
+nnote 16 ${A[3]}
+ note   ${Bb[3]} ${L[8]} ${L[4]} # extra pause
+nnote 8  ${Eb[3]}
+nnote 4  ${Gb[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${G[3]}
 
-note4  ${Bb[3]}
-note8d ${G[3]}
-note16 ${Bb[3]}
-note2  ${D[4]}
+nnote 4  ${Bb[3]}
+dnote 8 ${G[3]}
+nnote 16 ${Bb[3]}
+nnote 2  ${D[4]}
 
-note4  ${G[4]}
-note8d ${G[3]}
-note16 ${G[3]}
-note4  ${G[4]}
-note8d ${Fs[4]}
-note16 ${F[4]}
+nnote 4  ${G[4]}
+dnote 8 ${G[3]}
+nnote 16 ${G[3]}
+nnote 4  ${G[4]}
+dnote 8 ${Fs[4]}
+nnote 16 ${F[4]}
 
-note16 ${E[4]}
-note16 ${Ds[4]}
-note   ${E[4]} $L8 $L4 # extra pause
-note8  ${Gs[3]}
-note4  ${Cs[4]}
-note8d ${C[4]}
-note16 ${B[3]}
+nnote 16 ${E[4]}
+nnote 16 ${Ds[4]}
+ note   ${E[4]} ${L[8]} ${L[4]} # extra pause
+nnote 8  ${Gs[3]}
+nnote 4  ${Cs[4]}
+dnote 8 ${C[4]}
+nnote 16 ${B[3]}
 
-note16 ${Bb[3]}
-note16 ${A[3]}
-note   ${Bb[3]} $L8 $L4 # extra pause
-note8  ${Eb[3]}
-note4  ${Gb[3]}
-note8d ${Eb[3]}
-note16 ${Bb[3]}
+nnote 16 ${Bb[3]}
+nnote 16 ${A[3]}
+ note   ${Bb[3]} ${L[8]} ${L[4]} # extra pause
+nnote 8  ${Eb[3]}
+nnote 4  ${Gb[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${Bb[3]}
 
-note4  ${G[3]}
-note8d ${Eb[3]}
-note16 ${Bb[3]}
-note2  ${G[3]}
+nnote 4  ${G[3]}
+dnote 8 ${Eb[3]}
+nnote 16 ${Bb[3]}
+nnote 2  ${G[3]}
 
 dbeep
