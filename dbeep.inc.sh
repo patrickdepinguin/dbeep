@@ -42,6 +42,14 @@ L[8d]=$((${L[8]}  + ${L[8]}  / 2))
 L[16d]=$((${L[16]} + ${L[16]} / 2))
 L[32d]=$((${L[32]} + ${L[32]} / 2))
 
+# triplet lengths
+L[1t]=$((${L[1]}  * 2 / 3))
+L[2t]=$((${L[2]}  * 2 / 3))
+L[4t]=$((${L[4]}  * 2 / 3))
+L[8t]=$((${L[8]}  * 2 / 3))
+L[16t]=$((${L[16]} * 2 / 3))
+L[32t]=$((${L[32]} * 2 / 3))
+
 args=""
 first=1
 note()
@@ -73,6 +81,11 @@ nnote() {
 dnote() {
     # use half a note length as delay
     note $2 ${L[${1}d]} ${L[$(($1 * 2))d]}
+}
+# triplet note
+tnote() {
+    # use half a note length as delay
+    note $2 ${L[${1}t]} ${L[$(($1 * 2))t]}
 }
 
 # beep with the combined arguments
