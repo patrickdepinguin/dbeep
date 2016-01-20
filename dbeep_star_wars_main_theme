@@ -5,170 +5,159 @@
 # http://pop-sheet-music.com/Files/4a34e9740c764a1dc131af7ed130720f.pdf
 # See file LICENSE for license information.
 
-# TODO implement better way of setting note lengths and delays
-
-L1=1000
 . $(dirname $(readlink -f $0))/dbeep.inc.sh
 
-note8  ${D[3]}
-note8  ${D[3]}
-note8  ${D[3]}
+tnote 8  ${D[3]}
+tnote 8  ${D[3]}
+tnote 8  ${D[3]}
 
-note2  ${G[3]}
-note2  ${D[4]}
+lnote 2  ${G[3]}
+lnote 2  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${C[4]}
-note2  ${A[3]}
-note4  ${D[3]}
-note8  ${D[3]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${C[4]}
+ldnote 2  ${A[3]} # a bit longer than on score
+tnote 4  ${D[3]}
+tnote 8  ${D[3]}
 
-note2  ${G[3]}
-note2  ${D[4]}
+lnote 2  ${G[3]}
+lnote 2  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${C[4]}
-note2  ${A[3]}
-note4  ${D[3]}
-note8  ${D[3]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${C[4]}
+ldnote 2  ${A[3]} # a bit longer than on score
+tnote 4  ${D[3]}
+tnote 8  ${D[3]}
 
-note4d ${E[3]}
-note8  ${E[3]}
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note8  ${G[3]}
+ldnote 4  ${E[3]}
+lnote 8  ${E[3]}
+lnote 8  ${C[4]}
+lnote 8  ${B[3]}
+lnote 8  ${A[3]}
+lnote 8  ${G[3]}
 
-note8  ${G[3]}
-note8  ${A[3]}
-note8  ${B[3]}
-note4  ${A[3]}
-note8  ${E[3]}
-note4  ${Fs[3]}
-note4  ${D[3]}
-note8  ${D[3]}
+tnote 8  ${G[3]}
+tnote 8  ${A[3]}
+tnote 8  ${B[3]}
+tnote 4  ${A[3]}
+tnote 8  ${E[3]}
+lnote 4  ${Fs[3]}
+tnote 4  ${D[3]}
+tnote 8  ${D[3]}
 
-note4d ${E[3]}
-note8  ${E[3]}
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note8  ${G[3]}
+ldnote 4  ${E[3]}
+lnote 8  ${E[3]}
+lnote 8  ${C[4]}
+lnote 8  ${B[3]}
+lnote 8  ${A[3]}
+lnote 8  ${G[3]}
 
-note8d ${D[4]}
-note16 ${A[3]}
-note2  ${A[3]}
-note4  ${D[3]}
-note8  ${D[3]}
+ldnote 8  ${D[4]}
+lnote 16 ${A[3]}
+lnote 2  ${A[3]}
+tnote 4  ${D[3]}
+tnote 8  ${D[3]}
 
-note4d ${E[3]}
-note8  ${E[3]}
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note8  ${G[3]}
+ldnote 4  ${E[3]}
+lnote 8  ${E[3]}
+lnote 8  ${C[4]}
+lnote 8  ${B[3]}
+lnote 8  ${A[3]}
+lnote 8  ${G[3]}
 
-note8  ${G[3]}
-note8  ${A[3]}
-note8  ${B[3]}
-note4  ${A[3]}
-note8  ${E[3]}
-note4  ${Fs[3]}
-note4  ${D[4]}
-note8  ${D[4]}
+tnote 8  ${G[3]}
+tnote 8  ${A[3]}
+tnote 8  ${B[3]}
+tnote 4  ${A[3]}
+tnote 8  ${E[3]}
+lnote 4  ${Fs[3]}
+tnote 4  ${D[4]}
+tnote 8  ${D[4]}
 
-note4  ${G[4]}
-note8  ${F[4]}
-note4  ${E[4]}
-note8  ${D[4]}
-note4  ${C[4]}
-note8  ${Bb[3]}
-note4  ${A[3]}
-note8  ${G[3]}
+ltnote 4  ${G[4]}
+tnote 8  ${F[4]}
+ltnote 4  ${E[4]}
+tnote 8  ${D[4]}
+ltnote 4  ${C[4]}
+tnote 8  ${Bb[3]}
+ltnote 4  ${A[3]}
+tnote 8  ${G[3]}
 
-note2  ${D[4]}
-note4  ${A[3]}
-note   ${A[3]} $L8 $L4 # extra pause
-note8  ${D[3]}
-note8  ${D[3]}
-note8  ${D[3]}
+# this measure is a bit odd on the score, I simplified it a bit.
+lnote 4  ${D[4]}
+ note    ${A[3]} $((${L[2]} * 8 / 6)) $((${L[2]} * 1 / 6 + ${L[8]})) # extra pause
+tnote 8  ${D[3]}
+tnote 8  ${D[3]}
+tnote 8  ${D[3]}
 
-note2  ${G[3]}
-note2  ${D[4]}
+lnote 2  ${G[3]}
+lnote 2  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${C[4]}
-note2  ${A[3]}
-note4  ${D[3]}
-note8  ${D[3]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${C[4]}
+ldnote 2  ${A[3]} # a bit longer than on score
+tnote 4  ${D[3]}
+tnote 8  ${D[3]}
 
-note2  ${G[3]}
-note2  ${D[4]}
+lnote 2  ${G[3]}
+lnote 2  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${A[3]}
-note2  ${G[4]}
-note4  ${D[4]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${A[3]}
+lnote 2  ${G[4]}
+lnote 4  ${D[4]}
 
-note8  ${C[4]}
-note8  ${B[3]}
-note8  ${C[4]}
-note2  ${A[3]}
-note4  ${D[3]}
+tnote 8  ${C[4]}
+tnote 8  ${B[3]}
+tnote 8  ${C[4]}
+ldnote 2  ${A[3]} # a bit longer than on score
 
-note1  ${G[4]}
-
-note2d ${G[4]}
-note8  ${G[4]}
-note8  ${G[4]}
-note8  ${G[4]}
-
-note8  ${G[4]}
+# leave out the strange ending of the score
 
 dbeep
