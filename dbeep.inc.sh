@@ -87,6 +87,18 @@ tnote() {
     # use half a note length as delay
     note $2 ${L[${1}t]} ${L[$(($1 * 2))t]}
 }
+# long note
+lnote() {
+    note $2 $((${L[${1}]} * 8 / 6)) $((${L[${1}]} * 1 / 6))
+}
+# long dotted note
+ldnote() {
+    note $2 $((${L[${1}d]} * 8 / 6)) $((${L[${1}d]} * 1 / 6))
+}
+# long triplet note
+ltnote() {
+    note $2 $((${L[${1}t]} * 8 / 6)) $((${L[${1}t]} * 1 / 6))
+}
 
 # beep with the combined arguments
 dbeep() {
