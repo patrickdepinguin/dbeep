@@ -22,12 +22,19 @@ to compose a *beep* command-line using one of the `note` helper functions, and
 then call the `dbeep` function to execute that command-line.
 
 There is a generic `note` function that accepts a frequency, note length, and
-optional delay after the note. If you transcode real music, you can use the
-`note1`, `note2`, `note4`, etc. helper functions which output a whole note, half
-note, quarter note, etc. respectively.
+optional delay after the note. If you transcode a tune from sheet music, you can use one of the following convenience wrappers around `note`:
+
+* `nnote` (normal-length note)
+* `dnote` (dotted note)
+* `tnote` (triplet note)
+* `lnote` (long note, same as `nnote` but with a difference ratio of note length to delay)
+* `ldnote` (long dotted note)
+* `ltnote` (long triplet note)
+
+All these wrappers take as first argument the note length number (1=whole note, 2=half note, 4=quarter note, etc.) and as second argument the note frequency.
 
 `dbeep.inc.sh` defines the frequencies for all musical notes in various octaves.
-For example ${C[3]} refers to a C note in the third octave, and ${C[4]} is the
+For example `${C[3]}` refers to a C note in the third octave, and `${C[4]}` is the
 same note but one octave higher.
 
 See the contents of `dbeep.inc.sh` for more details.
@@ -47,8 +54,9 @@ dbeep
 
 ## TODO
 
-* Convert lengths to arrays too
 * Add uniform script argument to speed up/down, and to switch octave up/down
+* Use a more compact format, perhaps Nokia Composer format
+* Add better handling of pauses
 
 ## Contributing
 
