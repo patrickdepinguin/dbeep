@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Copyright (c) 2016 Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
+# See file LICENSE for license information.
+
+. $(dirname $(readlink -f $0))/dbeep.inc.sh
+
+note ${C[3]} 600 100
+note ${C[3]} 600 100
+note ${C[3]} 600 100
+note ${E[3]} 400 100
+note ${D[3]} 150  75
+note ${D[3]} 400 100
+note ${C[3]} 150  75
+note ${C[3]} 400 100
+note ${B[2]} 150  75
+note ${C[3]} 600 100
+
+dbeep
