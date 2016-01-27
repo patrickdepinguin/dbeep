@@ -60,7 +60,8 @@ dbeep
 
 ## Contributing
 
-Contributions are welcome!
+Contributions are welcome! Upstream source is:\
+https://github.com/patrickdepinguin/dbeep
 
 When adding new tunes, please indicate the source and copyright information.
 See existing scripts for examples.
