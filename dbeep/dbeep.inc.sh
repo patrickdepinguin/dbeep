@@ -1,6 +1,10 @@
 # Copyright (c) 2015-2016 Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
 # See file LICENSE for license information..
 
+# stop entire tune on Ctrl-C or other signals, instead of just one beep
+# invocation
+trap exit SIGHUP SIGINT SIGTERM
+
 # Frequencies from https://en.wikipedia.org/wiki/Scientific_pitch_notation#Table_of_note_frequencies
 C=(  16.352 32.703 65.406 130.81 261.63 523.25 1046.5 2093.0 4186.0 8372.0 16744.0 )
 Cs=( 17.324 34.648 69.296 138.59 277.18 554.37 1108.7 2217.5 4434.9 8869.8 17739.7 ) # C#
