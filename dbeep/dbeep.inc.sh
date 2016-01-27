@@ -104,3 +104,7 @@ ltnote() {
 dbeep() {
     beep $args
 }
+startover() {
+    args=""
+    first=1
+}

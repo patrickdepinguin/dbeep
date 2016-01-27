@@ -1,0 +1,177 @@
+#!/bin/sh
+
+# Copyright (c) 2016 Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
+# Manually coded based on https://www.youtube.com/watch?v=NjxNnqTcHhg
+# See file LICENSE for license information.
+
+. $(dirname $(readlink -f $0))/dbeep.inc.sh
+
+pop()
+{
+    note $1 60 190
+}
+pop_delay=0.25
+
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${D[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${D[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${G[5]}
+pop ${A[5]}
+pop ${Bb[5]}
+pop ${A[5]}
+pop ${Bb[5]}
+pop ${G[5]}
+pop ${A[5]}
+pop ${G[5]}
+pop ${A[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${D[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${D[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${G[5]}
+pop ${A[5]}
+pop ${Bb[5]}
+pop ${A[5]}
+pop ${Bb[5]}
+pop ${G[5]}
+pop ${A[5]}
+pop ${G[5]}
+pop ${A[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${F[5]}
+pop ${G[5]}
+pop ${A[5]}
+pop ${Bb[5]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${As[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${As[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${E[6]}
+pop ${F[6]}
+pop ${E[6]}
+pop ${F[6]}
+pop ${D[6]}
+pop ${E[6]}
+pop ${D[6]}
+pop ${E[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${As[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${As[5]}
+pop ${As[4]}
+pop ${D[5]}
+pop ${G[4]}
+dbeep
+sleep $pop_delay
+startover
+
+pop ${D[6]}
+pop ${E[6]}
+pop ${F[6]}
+pop ${E[6]}
+pop ${F[6]}
+pop ${D[6]}
+pop ${E[6]}
+pop ${D[6]}
+pop ${E[6]}
+pop ${C[6]}
+pop ${D[6]}
+pop ${C[6]}
+pop ${As[5]}
+pop ${C[6]}
+pop ${D[6]}
+dbeep
+sleep $pop_delay
+startover
