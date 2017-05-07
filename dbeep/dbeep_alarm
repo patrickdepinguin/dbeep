@@ -6,7 +6,7 @@
 
 . $(dirname $(readlink -f $0))/dbeep.inc.sh
 
-for n in $(seq 1 10); do
+for n in $(seq 1 3); do
     for f in $(seq 400 100 1600); do
         note $f 20
     done
