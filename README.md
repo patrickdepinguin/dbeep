@@ -41,7 +41,7 @@ See the contents of `dbeep.inc.sh` for more details.
 
 A skeleton dbeep file is:
 ```sh
-#!/bin/sh
+#!/bin/bash
 
 # (Copyright and license information)
 

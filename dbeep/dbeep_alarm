@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Tune found at https://www.reddit.com/r/linux/comments/18h8v5/does_anyone_have_or_know_a_source_for_beep_scripts/
 # dbeeptized by Thomas De Schampheleire <thomas.de.schampheleire@gmail.com>
